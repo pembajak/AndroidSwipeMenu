@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    tools:ignore="KeyboardInaccessibleWidget">
+
+    <com.babbicool.widget.androidswipemenu.SwipeMenuLayout
+        android:id="@+id/sml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftView="@+id/left"
+        app:contentView="@+id/content"
+        app:rightView="@+id/right">
+
+        <LinearLayout
+            android:id="@+id/left"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@android:color/holo_blue_dark"
+            android:orientation="horizontal"
+            tools:ignore="NewApi"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Left"
+                tools:ignore="HardcodedText"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text"
+                tools:ignore="HardcodedText"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:background="@android:color/holo_blue_bright"
+                android:clickable="true"
+                android:text="delete"/>
+
+            <TextView
+                android:id="@+id/collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+
+                android:background="@android:color/holo_orange_dark"
+                android:clickable="true"
+                android:text="Edit"
+                />
+
+        </LinearLayout>
+    </com.babbicool.widget.androidswipemenu.SwipeMenuLayout>
+
+</LinearLayout>

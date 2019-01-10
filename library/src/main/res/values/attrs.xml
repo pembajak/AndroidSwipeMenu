@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AndroidSwipeMenu">
+        <attr name="leftView" format="reference" />
+        <attr name="rightView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="hasRightView" format="boolean" />
+        <attr name="hasLeftView" format="boolean" />
+        <attr name="fraction" format="float" />
+    </declare-styleable>
+</resources>
